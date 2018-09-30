@@ -1,0 +1,7 @@
+D:\Microsoft Certification Preperations\70-483\Code\TrainingCode\MultiThreading - Tasks\LearningTasks_1\LearningTasks_1\bin\Debug\LearningTasks_1.exe.config
+D:\Microsoft Certification Preperations\70-483\Code\TrainingCode\MultiThreading - Tasks\LearningTasks_1\LearningTasks_1\bin\Debug\LearningTasks_1.exe
+D:\Microsoft Certification Preperations\70-483\Code\TrainingCode\MultiThreading - Tasks\LearningTasks_1\LearningTasks_1\bin\Debug\LearningTasks_1.pdb
+D:\Microsoft Certification Preperations\70-483\Code\TrainingCode\MultiThreading - Tasks\LearningTasks_1\LearningTasks_1\obj\Debug\LearningTasks_1.csprojResolveAssemblyReference.cache
+D:\Microsoft Certification Preperations\70-483\Code\TrainingCode\MultiThreading - Tasks\LearningTasks_1\LearningTasks_1\obj\Debug\LearningTasks_1.csproj.CoreCompileInputs.cache
+D:\Microsoft Certification Preperations\70-483\Code\TrainingCode\MultiThreading - Tasks\LearningTasks_1\LearningTasks_1\obj\Debug\LearningTasks_1.exe
+D:\Microsoft Certification Preperations\70-483\Code\TrainingCode\MultiThreading - Tasks\LearningTasks_1\LearningTasks_1\obj\Debug\LearningTasks_1.pdb
