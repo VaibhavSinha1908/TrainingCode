@@ -10,7 +10,7 @@ namespace LearningTasks_1
     {
 
         /// <summary>
-        /// When we need to create multiple tasks, we 
+        /// When we need to create multiple tasks with same Task Creation and Task Continuation options, we use Task Factory;
         /// </summary>
         /// <param name="args"></param>
         static void Main(string[] args)
