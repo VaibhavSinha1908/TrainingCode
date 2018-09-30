@@ -15,7 +15,7 @@ namespace LearningTasks_1
         /// <param name="args"></param>
         //static void Main(string[] args)
         //{
-        //    Task<int[]> parent = Task.Run(() => {
+        //    Task<int[]> parent = Task.Run(() => {   //Note the declaration of the Task variable.
         //        var results = new int[3];
 
         //        TaskFactory tf = new TaskFactory(TaskCreationOptions.AttachedToParent, TaskContinuationOptions.ExecuteSynchronously); 

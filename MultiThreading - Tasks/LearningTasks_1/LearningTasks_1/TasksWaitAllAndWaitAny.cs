@@ -33,7 +33,29 @@ namespace LearningTasks_1
 
             });
 
-            Task.WaitAll(tasks); //note: the WaitAll function is called on Task and not on variable 'tasks'
+            Task.WaitAll(tasks); //note: the WaitAll function is called on 'Task' and not on variable 'tasks'
+
+            TestWaitAny();
+        }
+
+        private static void TestWaitAny()
+        {
+            Task<int>[] tasks = new Task<int>[3];
+
+            tasks[0] = Task.Run(()=> { Thread.Sleep(1000); return 1; });
+            tasks[1] = Task.Run(() => { Thread.Sleep(4000); return 2; });
+            tasks[2] = Task.Run(() => { Thread.Sleep(3000); return 3; });
+
+            while (tasks.Length > 0)
+            {
+                var i = Task.WaitAny(tasks);
+                var completedTask = tasks[i];
+                Console.WriteLine("The Completed Task is:"+completedTask.Result);
+                var taskList = tasks.ToList();
+                taskList.RemoveAt(i);
+                tasks = taskList.ToArray();
+            }
+
         }
     }
 }
