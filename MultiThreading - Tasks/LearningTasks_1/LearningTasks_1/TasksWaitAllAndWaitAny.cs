@@ -33,7 +33,7 @@ namespace LearningTasks_1
 
             });
 
-            Task.WaitAll(tasks); //note the WaitAll function is called on Task and not on variable 'tasks'
+            Task.WaitAll(tasks); //note: the WaitAll function is called on Task and not on variable 'tasks'
         }
     }
 }
