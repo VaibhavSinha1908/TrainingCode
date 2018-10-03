@@ -15,12 +15,13 @@ namespace LearningTasks_1
         //    {
         //        return a + 10;
 
-        //    }).ContinueWith((i) => {
+        //    }).ContinueWith((i) =>
+        //    {
 
         //        return i.Result + 20;   ///Note the "i.Result" which gets the result from the 1st task.
-        //    }) ;
+        //    });
 
-        //    Console.WriteLine("The result is: "+ T.Result);  ///Here, T.Result gets the final result after all the tasks are completed.
+        //    Console.WriteLine("The result is: " + T.Result);  ///Here, T.Result gets the final result after all the tasks are completed.
         //}
     }
 }

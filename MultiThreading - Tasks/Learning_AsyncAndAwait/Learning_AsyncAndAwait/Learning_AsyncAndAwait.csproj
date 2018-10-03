@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{18446C7F-5F88-41B2-BADC-25F948D496EF}</ProjectGuid>
+    <ProjectGuid>{3946AF63-90E0-4D46-99FD-7936DF11044A}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>LearningTasks_1</RootNamespace>
-    <AssemblyName>LearningTasks_1</AssemblyName>
+    <RootNamespace>Learning_AsyncAndAwait</RootNamespace>
+    <AssemblyName>Learning_AsyncAndAwait</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -42,13 +42,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ChildTasks.cs" />
-    <Compile Include="ChildTaskWithTaskFactory.cs" />
-    <Compile Include="TaskContinuation.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="TasksAggregateExceptions.cs" />
-    <Compile Include="TasksWaitAllAndWaitAny.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

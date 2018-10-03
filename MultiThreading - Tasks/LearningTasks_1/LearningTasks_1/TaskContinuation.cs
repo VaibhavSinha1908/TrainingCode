@@ -8,25 +8,32 @@ namespace LearningTasks_1
 {
     class TaskContinuation
     {
-        //static void Main(string[] args)
+        //static void Main()
         //{
-        //    Task t = Task.Run(() => {
-        //        return 43;
+        //    Task t = Task.Run(()=> {
+        //        Console.WriteLine("The task starts");
         //    });
 
-        //    t.ContinueWith((i) => {
-        //        Console.WriteLine("Only on Canceled");
-        //    }, TaskContinuationOptions.OnlyOnCanceled); //Note the options
+        //   Task t2= t.ContinueWith((i) => { Console.WriteLine("The task ends..."); });
 
-        //    t.ContinueWith((i) => {
-        //        Console.WriteLine("Only on Faulted");
-        //    }, TaskContinuationOptions.OnlyOnFaulted);
-            
-        //    var completedTask = t.ContinueWith((i) => {
-        //        Console.WriteLine("Completed");
-        //    }, TaskContinuationOptions.OnlyOnRanToCompletion);
+        //   t2.Wait(); //Note: Remember to call Wait on Task t2 and not on t.
 
-        //    completedTask.Wait(); //Without completedTask.Wait() the main method exits without waiting for the tasks to complete.
         //}
+
+
+        public static void Main()
+        {
+            int a = 0;
+            Task<int> t = Task.Run(() => {
+                a = 10;
+                Console.WriteLine("The task starts");
+                return a;
+            });
+
+            Task t2 =Task.Delay(5000).ContinueWith((ant) => { var temp = t.Result + 10;  Console.WriteLine("The result after the delay is: " + temp); });
+
+            t2.Wait();
+            
+        }
     }
 }
