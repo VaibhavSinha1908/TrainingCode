@@ -25,7 +25,7 @@ namespace LanguageBasics
             {
                 case 10: Console.WriteLine("Print 10");
                     break;
-                case 11:
+                case 11://the control flows to the next case statement.
                 case 12: Console.WriteLine("Print 12");
                     break;
                 default: Console.WriteLine("Print Default");
