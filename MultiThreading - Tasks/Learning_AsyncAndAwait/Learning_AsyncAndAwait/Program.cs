@@ -10,14 +10,16 @@ namespace Learning_AsyncAndAwait
     {
         static void Main(string[] args)
         {
-            var t = Task.Run(async () => { await DisplayPrimesCount(); });
+            Task t = Task.Run(async () => await DisplayPrimesCount());
             t.Wait();
-           
+            //var t = Task.Run(async () => { await DisplayPrimesCount(); });
+            //t.Wait();
+
         }
 
         private static async Task DisplayPrimesCount()//Note the void here does not work. Read Article: https://msdn.microsoft.com/en-us/magazine/jj991977.aspx
         {
-            for (int i = 0; i < 10; i++)
+            for (int i = 0; i < 100; i++)
             {
                // Console.WriteLine(await GetPrimesCountAsync(i * 100000 + 2, 100000));
                Console.WriteLine(await GetPrimesCountAsync(i * 100000 + 2, 100000) + " primes between "+ (i*100000) + " and " + ((i+1)*100000-1));
