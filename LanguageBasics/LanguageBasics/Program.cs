@@ -8,28 +8,31 @@ namespace LanguageBasics
 {
     class Program
     {
-        static void Main(string[] args)
-        {
-            //TryingNullConditionalStatments();
+        //static void Main(string[] args)
+        //{
+        //    //TryingNullConditionalStatments();
 
-            //TryingSwitchCases();
+        //    //TryingSwitchCases();
 
-            int a=10;
-           // TryingSwitchCasesWithUnReachableCaseStmts(a);
+        //    int a=10;
+        //   // TryingSwitchCasesWithUnReachableCaseStmts(a);
 
-            TryingSwitchCasesWithUnReachableCaseStmts_v2(a);
+        //    TryingSwitchCasesWithUnReachableCaseStmts_v2(a);
 
-        }
+        //}
 
         private static void TryingSwitchCasesWithUnReachableCaseStmts_v2(int a)
         {
             switch (a)
             {
+                case int b when b < 2:
+                    Console.WriteLine("this works too." + b); //No error here, as a 
+                    break;
                 case int x:
                     Console.WriteLine("This works as well");
                     break;
-                case int b when b > 2: Console.WriteLine("this works too."); //A compile time error: The switch case has already been handled by a previous case.
-                    break;
+                //case int b when b > 2: Console.WriteLine("this works too."); //A compile time error: The switch case has already been handled by a previous case.
+                //    break; 
                 
 
             }
